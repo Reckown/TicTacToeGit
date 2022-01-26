@@ -332,75 +332,74 @@ public class GameVsJoueur extends AppCompatActivity implements ValueEventListene
     public void clickOnGrille(View view) {
         if (canPlay) {
             boolean ok = false;
-            while (!ok) {
-                if (view == grille1) {
-                    if (tab[0][0] == 0) {
-                        ok = true;
-                        tab[0][0] = player;
-                        cases.child("0").setValue(player);
-                    }
-                }
-                if (view == grille2) {
-                    if (tab[0][1] == 0) {
-                        ok = true;
-                        tab[0][1] = player;
-                        cases.child("1").setValue(player);
-                    }
-                }
-                if (view == grille3) {
-                    if (tab[0][2] == 0) {
-                        ok = true;
-                        tab[0][2] = player;
-                        cases.child("2").setValue(player);
-                    }
-
-                }
-                if (view == grille4) {
-                    if (tab[1][0] == 0) {
-                        ok = true;
-                        tab[1][0] = player;
-                        cases.child("3").setValue(player);
-                    }
-                }
-                if (view == grille5) {
-                    if (tab[1][1] == 0) {
-                        ok = true;
-                        tab[1][1] = player;
-                        cases.child("4").setValue(player);
-                    }
-                }
-                if (view == grille6) {
-                    if (tab[1][2] == 0) {
-                        ok = true;
-                        tab[1][2] = player;
-                        cases.child("5").setValue(player);
-                    }
-                }
-                if (view == grille7) {
-                    if (tab[2][0] == 0) {
-                        ok = true;
-                        tab[2][0] = player;
-                        cases.child("6").setValue(player);
-                    }
-                }
-                if (view == grille8) {
-                    if (tab[2][1] == 0) {
-                        ok = true;
-                        tab[2][1] = player;
-                        cases.child("7").setValue(player);
-                    }
-                }
-                if (view == grille9) {
-                    if (tab[2][2] == 0) {
-                        ok = true;
-                        tab[2][2] = player;
-                        cases.child("8").setValue(player);
-                    }
+            if (view == grille1) {
+                if (tab[0][0] == 0) {
+                    ok = true;
+                    tab[0][0] = player;
+                    cases.child("0").setValue(player);
                 }
             }
-            this.canPlay = false;
-            whoPlay.setText("Tour de l'adversaire");
-            peutJouer.setValue(""+opposant);
+            if (view == grille2) {
+                if (tab[0][1] == 0) {
+                    ok = true;
+                    tab[0][1] = player;
+                    cases.child("1").setValue(player);
+                }
+            }
+            if (view == grille3) {
+                if (tab[0][2] == 0) {
+                    ok = true;
+                    tab[0][2] = player;
+                    cases.child("2").setValue(player);
+                }
+            }
+            if (view == grille4) {
+                if (tab[1][0] == 0) {
+                    ok = true;
+                    tab[1][0] = player;
+                    cases.child("3").setValue(player);
+                }
+            }
+            if (view == grille5) {
+                if (tab[1][1] == 0) {
+                    ok = true;
+                    tab[1][1] = player;
+                    cases.child("4").setValue(player);
+                }
+            }
+            if (view == grille6) {
+                if (tab[1][2] == 0) {
+                    ok = true;
+                    tab[1][2] = player;
+                    cases.child("5").setValue(player);
+                }
+            }
+            if (view == grille7) {
+                if (tab[2][0] == 0) {
+                    ok = true;
+                    tab[2][0] = player;
+                    cases.child("6").setValue(player);
+                }
+            }
+            if (view == grille8) {
+                if (tab[2][1] == 0) {
+                    ok = true;
+                    tab[2][1] = player;
+                    cases.child("7").setValue(player);
+                }
+            }
+            if (view == grille9) {
+                if (tab[2][2] == 0) {
+                    ok = true;
+                    tab[2][2] = player;
+                    cases.child("8").setValue(player);
+                }
+            }
+            if(ok){
+                this.canPlay = false;
+                whoPlay.setText("Tour de l'adversaire");
+                peutJouer.setValue(""+opposant);
+            }
         }
     }
 
