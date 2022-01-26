@@ -6,6 +6,7 @@ import androidx.arch.core.executor.TaskExecutor;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -34,6 +35,8 @@ public class VerifyNumber extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify_number);
+
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         progressBar = findViewById(R.id.progressBar);
         editText = findViewById(R.id.editTextNumber);

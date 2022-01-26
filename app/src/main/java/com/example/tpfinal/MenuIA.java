@@ -3,6 +3,7 @@ package com.example.tpfinal;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -19,6 +20,9 @@ public class MenuIA extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_ia);
+
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         this.spinner = findViewById(R.id.spinner);
         spinner.setAdapter(new ArrayAdapter<String >(this, android.R.layout.simple_spinner_dropdown_item, type));
 
