@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "629484026195",
+    "firebase_url": "https://moreisen-4d056-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "moreisen-4d056",
+    "storage_bucket": "moreisen-4d056.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629484026195:android:a71a86c6ba7f2861bfc9a6",
+        "android_client_info": {
+          "package_name": "com.example.tpfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629484026195-6rvfg8je96q2d7r7kojamvbsd9csuitb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tpfinal",
+            "certificate_hash": "0000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "client_id": "629484026195-ua8jodbvoava3krvms6vfiikikaj3h2l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOXP6psLYIvwsK6SRJMKvO-7xzetRIogI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629484026195-ua8jodbvoava3krvms6vfiikikaj3h2l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

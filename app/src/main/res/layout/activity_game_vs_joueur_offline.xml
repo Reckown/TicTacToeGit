@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameVsJoueurOffline">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A267AC"
+            android:padding="5sp"
+            android:text="Jeu"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="Joueur n°"
+            android:textAlignment="center"
+            android:textColor="#A267AC"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="a gagne/perdu"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="49dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:layout_marginBottom="7sp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/grille1o"
+                android:layout_width="100sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:onClick="clickOnGrille"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/grille2o"
+                android:layout_width="100sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:onClick="clickOnGrille"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/grille3o"
+                android:layout_width="100sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:onClick="clickOnGrille"
+                tools:srcCompat="@tools:sample/avatars" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:layout_marginBottom="7sp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/grille4o"
+                android:layout_width="100sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:onClick="clickOnGrille"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/grille5o"
+                android:layout_width="100sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:onClick="clickOnGrille"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/grille6o"
+                android:layout_width="100sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:onClick="clickOnGrille"
+                tools:srcCompat="@tools:sample/avatars" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/grille7o"
+                android:layout_width="100sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:onClick="clickOnGrille"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/grille8o"
+                android:layout_width="100sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:onClick="clickOnGrille"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/grille9o"
+                android:layout_width="100sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:onClick="clickOnGrille"
+                tools:srcCompat="@tools:sample/avatars" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="49dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonRetour"
+                android:layout_width="100sp"
+                android:layout_height="60sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+                android:backgroundTint="#CE7BB0"
+                android:onClick="retourClick"
+                android:text="Retour" />
+
+            <Button
+                android:id="@+id/buttonRejouer"
+                android:layout_width="100sp"
+                android:layout_height="60sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+                android:backgroundTint="#CE7BB0"
+                android:onClick="rejouerClick"
+                android:text="Rejouer" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
