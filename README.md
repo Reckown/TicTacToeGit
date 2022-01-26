@@ -1,4 +1,4 @@
-**# TicTacToeGit
+# TicTacToeGit
 
 Fait par Pierre Landais et Tristan Roux, étudiant à l'ISEN de Nantes,
 
